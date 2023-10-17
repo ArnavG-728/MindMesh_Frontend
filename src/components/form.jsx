@@ -60,7 +60,7 @@ const Form = () => {
             region : formData.region
         }
         console.log(data)
-        const res = await axios.post('https://mindmesh-ag.onrender.com/',data);
+        const res = await axios.post('https://mindmesh-ag.onrender.com/api',data);
         setreceivedData(res.data);
         setLoading(false)
         console.log(res)
